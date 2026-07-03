@@ -131,7 +131,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     try:
-        st.image("logo.png", width=120)  # Adjust the path/width as needed
+        st.image("Logo.png", width=120)  # Adjust the path/width as needed
     except FileNotFoundError:
         st.caption("(Logo not found)")
 
