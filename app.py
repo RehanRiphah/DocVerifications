@@ -248,6 +248,11 @@ if verify_clicked:
                         "program": cert_data.get("program") or record.get("program"),
                         "issuer": cert_data.get("issuer") or record.get("issuer"),
                         "issued_at": cert_data.get("issued_at") or record.get("issued_at"),
+                        "facilitators": cert_data.get("facilitators") or record.get("facilitators"),
+                        "facilitator_name": cert_data.get("facilitator_name") or record.get("facilitator_name"),
+                        "facilitator_email": cert_data.get("facilitator_email") or record.get("facilitator_email"),
+                        "facilitator_contact": cert_data.get("facilitator_contact") or record.get("facilitator_contact"),
+                        "office_contact": cert_data.get("office_contact") or record.get("office_contact"),
                     }
                 else:
                     display_data = {
@@ -256,6 +261,11 @@ if verify_clicked:
                         "program": record.get("program"),
                         "issuer": record.get("issuer"),
                         "issued_at": record.get("issued_at"),
+                        "facilitators": record.get("facilitators"),
+                        "facilitator_name": record.get("facilitator_name"),
+                        "facilitator_email": record.get("facilitator_email"),
+                        "facilitator_contact": record.get("facilitator_contact"),
+                        "office_contact": record.get("office_contact"),
                     }
                 
                 # Render certificate card
@@ -273,6 +283,11 @@ if verify_clicked:
                     ("Program / Course", display_data.get("program")),
                     ("Issuer", display_data.get("issuer")),
                     ("Issue Date", display_data.get("issued_at")),
+                    ("Facilitators", display_data.get("facilitators")),
+                    ("Focal Facilitator", display_data.get("facilitator_name")),
+                    ("Facilitator Email", display_data.get("facilitator_email")),
+                    ("Facilitator Contact", display_data.get("facilitator_contact")),
+                    ("Office Contact", display_data.get("office_contact")),
                 ]
                 for label, value in fields:
                     if value:

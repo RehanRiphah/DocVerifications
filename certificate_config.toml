@@ -7,22 +7,24 @@ output_dir = "certificates_output"
 name_column = "Names of faculty member/s"
 
 [layout]
-name_center_x = 780
-name_center_y = 530
-program_center_x = 780
-program_center_y = 620
-date_center_x = 780
-date_center_y = 400
-id_center_x = 780
-id_center_y = 380
-time_center_x = 780
-time_center_y = 360
-venue_center_x = 780
-venue_center_y = 340
-chair_center_x = 780
-chair_center_y = 320
-facilitators_center_x = 780
-facilitators_center_y = 300
+name_center_x = 750
+name_center_y = 540
+program_center_x = 750
+program_center_y = 435
+date_center_x = 500
+date_center_y = 360
+id_center_x = 110
+id_center_y = 30
+time_center_x = 500
+time_center_y = 310
+venue_center_x = 500
+venue_center_y = 250
+chair_center_x = 850
+chair_center_y = 360
+facilitators_center_x = 900
+facilitators_center_y = 310
+facilitators_box_width = 350
+facilitators_line_height = 18
 max_width = 420
 initial_font_size = 40
 min_font_size = 12
@@ -34,8 +36,14 @@ version = "1.0"
 base_url = "https://docverifications.streamlit.app"
 time = "9:00 AM - 5:00 PM"
 venue = "Main Auditorium"
-chair = "Prof. Dr. Jane Doe"
-facilitators = ["Facilitator One", "Facilitator Two", "Facilitator Three"]
+chair = "Prof. Dr. Arif Ullah"
+date = "23 June 2026"
+facilitators = [
+    "Prof. Dr Rehan Zafar Paracha",
+    "Assoc. Prof. Dr Hina Ahsan",
+    "Assist. Prof. Dr Madeeha Kanwal",
+    "Dr Muahammad Wasay"
+]
 
 [focal_facilitator]
 name = "Prof. Dr Rehan Zafar Paracha"
