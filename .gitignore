@@ -5,3 +5,5 @@ generate_certificates.py
 .devcontainer
 __pycache__
 *.csv
+*.pdf
+*.txt
