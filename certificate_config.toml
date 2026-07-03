@@ -1,0 +1,47 @@
+# Certificate generator configuration
+
+[paths]
+csv_path = "RIPS_FPS_Remaining.csv"
+template_path = "Attendance.pdf"
+output_dir = "certificates_output"
+name_column = "Names of faculty member/s"
+
+[layout]
+name_center_x = 780
+name_center_y = 530
+program_center_x = 780
+program_center_y = 620
+date_center_x = 780
+date_center_y = 400
+id_center_x = 780
+id_center_y = 380
+time_center_x = 780
+time_center_y = 360
+venue_center_x = 780
+venue_center_y = 340
+chair_center_x = 780
+chair_center_y = 320
+facilitators_center_x = 780
+facilitators_center_y = 300
+max_width = 420
+initial_font_size = 40
+min_font_size = 12
+
+[workshop]
+program_name = "Digital Curation and Authoring"
+issuer = "RIPHAH INSTITUTE OF PHARMACEUTICAL SCIENCES"
+version = "1.0"
+base_url = "https://docverifications.streamlit.app"
+time = "9:00 AM - 5:00 PM"
+venue = "Main Auditorium"
+chair = "Prof. Dr. Jane Doe"
+facilitators = ["Facilitator One", "Facilitator Two", "Facilitator Three"]
+
+[focal_facilitator]
+name = "Prof. Dr Rehan Zafar Paracha"
+email = "rehan.Paracha@riphah.edu.pk"
+contact_number = "+923316665581"
+office_contact = "+923316665581"
+
+[supabase]
+table_name = "certificates"
