@@ -25,12 +25,12 @@ def load_public_key():
 
 public_key = load_public_key()
 
-st.title("🔍 Official Certificate Verifier")
-st.write("Scan the QR code on your certificate")
+st.title("🔍 Official RIPS Microcredential Certificate Verifier")
+st.write("Enter the ID given on your certificate")
 
-payload = st.text_input("Verification Payload", "")
+cert_id = st.text_input("Certificate ID", "")
 
-if st.button("Verify") or payload:
+if st.button("Verify") or cert_id:
     try:
         if "payload" in st.query_params:
             payload = st.query_params["payload"]
