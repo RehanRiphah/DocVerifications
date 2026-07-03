@@ -2,3 +2,4 @@ issuer_private_key.pem
 issuer_public_key.pem
 .env
 certificates_output/
+generate_certificates.py
