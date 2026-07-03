@@ -1,9 +1,0 @@
-streamlit
-pandas
-reportlab
-PyPDF2
-qrcode[pil]
-Pillow
-cryptography
-python-dotenv
-supabase
