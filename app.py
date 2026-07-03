@@ -19,6 +19,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+
 # ---------- Custom CSS for better visuals ----------
 st.markdown("""
 <style>
@@ -124,6 +125,21 @@ st.markdown("""
         border: 1px solid #cbd5e0;
     }
 </style>
+""", unsafe_allow_html=True)
+# ---------- Header with Logo ----------
+# Center the logo above the header
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    try:
+        st.image("logo.png", width=120)  # Adjust the path/width as needed
+    except FileNotFoundError:
+        st.caption("(Logo not found)")
+
+st.markdown("""
+<div class="main-header">
+    <h1>🔍 RIPS Microcredential Verifier</h1>
+    <p>Verify the authenticity of your digital certificate</p>
+</div>
 """, unsafe_allow_html=True)
 
 # ---------- Supabase Setup ----------
