@@ -217,7 +217,7 @@ if verify_clicked:
                 st.stop()
             
             # Extract cert_id from payload
-            cert_id = cert_data.get("cert_id")
+            cert_id = cert_data.get("cert_id") or cert_data.get("id")
             if not cert_id:
                 st.error("❌ Certificate ID not found in signed data.")
                 st.stop()
