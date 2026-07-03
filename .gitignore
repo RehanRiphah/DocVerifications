@@ -3,3 +3,5 @@ issuer_public_key.pem
 .env
 certificates_output/
 generate_certificates.py
+.devcontainer
+__pycache__
