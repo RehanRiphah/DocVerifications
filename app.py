@@ -28,12 +28,13 @@ public_key = load_public_key()
 st.title("🔍 Official Certificate Verifier")
 st.write("Scan the QR code on your certificate")
 
-payload = st.text_input("Verification Payload", "")
+query_payload = st.query_params.get("payload", [""])
+payload = st.text_input("Verification Payload", value=query_payload[0] if query_payload else "")
 
 if st.button("Verify") or payload:
     try:
-        if "payload" in st.query_params:
-            payload = st.query_params["payload"]
+        if "payload" in st.query_params and st.query_params["payload"]:
+            payload = st.query_params["payload"][0]
         
         if payload:
             decoded_bytes = base64.urlsafe_b64decode(payload + '==')
