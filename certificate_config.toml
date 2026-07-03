@@ -1,7 +1,7 @@
 # Certificate generator configuration
 
 [paths]
-csv_path = "RIPS_FPS_Remaining.csv"
+csv_path = "RIPS_FPS.csv"
 template_path = "Attendance.pdf"
 output_dir = "certificates_output"
 name_column = "Names of faculty member/s"
@@ -14,7 +14,7 @@ program_center_y = 435
 date_center_x = 500
 date_center_y = 360
 id_center_x = 110
-id_center_y = 30
+id_center_y = 20
 time_center_x = 500
 time_center_y = 310
 venue_center_x = 500
@@ -33,11 +33,12 @@ min_font_size = 12
 program_name = "Digital Curation and Authoring"
 issuer = "RIPHAH INSTITUTE OF PHARMACEUTICAL SCIENCES"
 version = "1.0"
-base_url = "https://docverifications.streamlit.app"
-time = "9:00 AM - 5:00 PM"
-venue = "Main Auditorium"
+base_url = "https://certverify.streamlit.app/"
+qr_mode = "cert_id"
+time = "2:00 PM – 4:00 PM"
+venue = "Room No. 429"
 chair = "Prof. Dr. Arif Ullah"
-date = "23 June 2026"
+date = "23rd June 2026"
 facilitators = [
     "Prof. Dr Rehan Zafar Paracha",
     "Assoc. Prof. Dr Hina Ahsan",
