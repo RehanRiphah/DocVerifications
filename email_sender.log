@@ -1,0 +1,98 @@
+2026-07-04 12:07:17,656 [INFO] Starting email send run
+2026-07-04 12:07:17,790 [INFO] [DRY RUN] Would send 7710F8ED_Prof._Dr._Arif_Ullah_Khan.pdf to arif.ullah@riphah.edu.pk
+2026-07-04 12:07:17,854 [INFO] [DRY RUN] Would send 89A32142_Prof._Dr._Shahiq-uz-Zaman.pdf to shahiq.zaman@riphah.edu.pk
+2026-07-04 12:07:17,904 [INFO] [DRY RUN] Would send FA7ADE6C_Prof._Dr._Humaira_Nadeem.pdf to humaira.nadeem@riphah.edu.pk
+2026-07-04 12:07:17,953 [INFO] [DRY RUN] Would send EDC8F433_Prof._Dr._Humaira_Naureen.pdf to humaira.naureen@riphah.edu.pk
+2026-07-04 12:07:18,009 [INFO] [DRY RUN] Would send FCEB22C4_Prof._Dr._Rehan_Zafar_Paracha.pdf to rehan.paracha@riphah.edu.pk
+2026-07-04 12:07:18,059 [INFO] [DRY RUN] Would send 84707042_Dr._Babar_Murtaza.pdf to babar.murtaza@riphah.edu.pk
+2026-07-04 12:07:18,117 [INFO] [DRY RUN] Would send 8A8F4735_Dr._Masood_Ur_Rehman.pdf to masood.rehman@riphah.edu.pk
+2026-07-04 12:07:18,173 [INFO] [DRY RUN] Would send 0A1426A0_Dr._Muhammad_Mohsin_Ansari.pdf to muhammad.mohsin@riphah.edu.pk
+2026-07-04 12:07:18,227 [INFO] [DRY RUN] Would send D8F52A22_Dr._Hina_Ahsan.pdf to hina.ahsan@riphah.edu.pk
+2026-07-04 12:07:18,277 [INFO] [DRY RUN] Would send EEF02529_Dr._Muhammad_Faheem.pdf to muhammad.faheem@riphah.edu.pk
+2026-07-04 12:07:18,336 [INFO] [DRY RUN] Would send 96DA7F2F_Dr._Madiha_Kanwal.pdf to madiha.kanwal@riphah.edu.pk
+2026-07-04 12:07:18,387 [INFO] [DRY RUN] Would send FFAE294A_Dr._Shahana_Khattak.pdf to shahna.khattak@riphah.edu.pk
+2026-07-04 12:07:18,437 [INFO] [DRY RUN] Would send 2272DD40_Dr._Khan_Hashim.pdf to khan.hashim@riphah.edu.pk
+2026-07-04 12:07:18,485 [INFO] [DRY RUN] Would send 0359B282_Dr._Farah_Azhar.pdf to farah.azhar@riphah.edu.pk
+2026-07-04 12:07:18,533 [INFO] [DRY RUN] Would send 618C5FC7_Dr._Amber_Mehmood_Minhas.pdf to amber.minhas@riphah.edu.pk
+2026-07-04 12:07:18,584 [INFO] [DRY RUN] Would send 7D8F1ADA_Dr._Sundas_Safdar_Khan.pdf to sundas.safdar@riphah.edu.pk
+2026-07-04 12:07:18,637 [INFO] [DRY RUN] Would send 978C732B_Dr._Kamil_Anum.pdf to kamil.anum@riphah.edu.pk
+2026-07-04 12:07:18,696 [INFO] [DRY RUN] Would send 7F775EFA_Dr._Warda_Zulfiqar.pdf to warda.zulfiqar@riphah.edu.pk
+2026-07-04 12:07:18,747 [INFO] [DRY RUN] Would send 04480912_Dr._Azra_Begum.pdf to azra.begum@riphah.edu.pk
+2026-07-04 12:07:18,798 [INFO] [DRY RUN] Would send 5FCAE59A_Dr._Maha_Mir.pdf to maha.mir@riphah.edu.pk
+2026-07-04 12:07:18,854 [INFO] [DRY RUN] Would send 7DBB8A9A_Dr._Rohail_Bhatti.pdf to rohail.bhatti@riphah.edu.pk
+2026-07-04 12:07:18,907 [INFO] [DRY RUN] Would send 0E780DD9_Dr._Rubab_Haider.pdf to rubab.haider@riphah.edu.pk
+2026-07-04 12:07:18,962 [INFO] [DRY RUN] Would send E6A5A0A4_Dr._Tayyaba_Anwar.pdf to tayyaba.anwar@riphah.edu.pk
+2026-07-04 12:07:19,010 [INFO] [DRY RUN] Would send 4209F744_Dr._Amna_Niaz.pdf to amna.niaz@riphah.edu.pk
+2026-07-04 12:07:19,066 [INFO] [DRY RUN] Would send 02FFAA5A_Dr._Areej_Nadir.pdf to areej.nadir@riphah.edu.pk
+2026-07-04 12:07:19,116 [INFO] [DRY RUN] Would send E78A05E7_Dr._Aneela_Tahir.pdf to aneela.tahir@riphah.edu.pk
+2026-07-04 12:07:19,172 [INFO] [DRY RUN] Would send 70266244_Dr._Maria_Hameed.pdf to maria.hameed@riphah.edu.pk
+2026-07-04 12:07:19,227 [INFO] [DRY RUN] Would send B1FABB49_Dr._Muhammad_Wasay_Shahid.pdf to wasay.shahid@riphah.edu.pk
+2026-07-04 12:07:19,282 [INFO] [DRY RUN] Would send 3FED01D2_Dr._Sana_Ayyaz.pdf to sana.ayyaz@riphah.edu.pk
+2026-07-04 12:07:19,338 [INFO] [DRY RUN] Would send D332A224_Dr._Naziha_Inam.pdf to naziha.inam@riphah.edu.pk
+2026-07-04 12:07:19,394 [INFO] [DRY RUN] Would send C141D34E_Dr._Aleena_Muskan_Niazi.pdf to aleena.muskan@riphah.edu.pk
+2026-07-04 12:07:19,443 [INFO] [DRY RUN] Would send C20D9B32_Dr._Syeda_Farkhanda_Sundas.pdf to sundas.farkhanda@riphah.edu.pk
+2026-07-04 12:07:19,495 [INFO] [DRY RUN] Would send 6E26CE80_Dr._Malaika_Siddiqui.pdf to malaika.siddiqui@riphah.edu.pk
+2026-07-04 12:07:19,545 [INFO] [DRY RUN] Would send 1C178ABF_Dr._Syed_Umer_Afzaal.pdf to umer.afzaal@riphah.edu.pk
+2026-07-04 12:07:19,595 [INFO] [DRY RUN] Would send 337B422A_Dr._Rabia_Mazhar.pdf to rabia.mazhar@riphah.edu.pk
+2026-07-04 12:07:19,596 [WARNING] Skipping invalid row 36: name='Dr. Ahmed Hussain' email=''
+2026-07-04 12:07:19,596 [INFO] Wrote failure report to /home/hp/certificates/Certificates_2/failed_matches.csv
+2026-07-04 12:07:19,596 [INFO] Run complete: sent=35 skipped=1
+2026-07-04 12:21:59,995 [INFO] Starting email send run
+2026-07-04 12:22:00,058 [INFO] [DRY RUN] Would send 40C0CD41_Prof._Dr._Shahiq-uz-Zaman.pdf to shahiq.zaman@riphah.edu.pk
+2026-07-04 12:22:00,106 [INFO] [DRY RUN] Would send 4A9C2998_Prof._Dr._Humaira_Nadeem.pdf to humaira.nadeem@riphah.edu.pk
+2026-07-04 12:22:00,147 [INFO] [DRY RUN] Would send 17CF942C_Dr._Babar_Murtaza.pdf to babar.murtaza@riphah.edu.pk
+2026-07-04 12:22:00,192 [INFO] [DRY RUN] Would send 0D16D968_Dr._Muhammad_Mohsin_Ansari.pdf to muhammad.mohsin@riphah.edu.pk
+2026-07-04 12:22:00,236 [INFO] [DRY RUN] Would send 1B92FE97_Dr._Muhammad_Faheem.pdf to muhammad.faheem@riphah.edu.pk
+2026-07-04 12:22:00,283 [INFO] [DRY RUN] Would send 9403593C_Dr._Shahana_Khattak.pdf to shahna.khattak@riphah.edu.pk
+2026-07-04 12:22:00,327 [INFO] [DRY RUN] Would send C99F9DB0_Dr._Khan_Hashim.pdf to khan.hashim@riphah.edu.pk
+2026-07-04 12:22:00,374 [INFO] [DRY RUN] Would send 9A7DAF08_Dr._Amber_Mehmood_Minhas.pdf to amber.minhas@riphah.edu.pk
+2026-07-04 12:22:00,418 [INFO] [DRY RUN] Would send B0B840A5_Dr._Sundas_Safdar_Khan.pdf to sundas.safdar@riphah.edu.pk
+2026-07-04 12:22:00,468 [INFO] [DRY RUN] Would send A63F2F6C_Dr._Kamil_Anum.pdf to kamil.anum@riphah.edu.pk
+2026-07-04 12:22:00,521 [INFO] [DRY RUN] Would send 993759F5_Dr._Azra_Begum.pdf to azra.begum@riphah.edu.pk
+2026-07-04 12:22:00,570 [INFO] [DRY RUN] Would send 4C367774_Dr._Maha_Mir.pdf to maha.mir@riphah.edu.pk
+2026-07-04 12:22:00,616 [INFO] [DRY RUN] Would send 6963181F_Dr._Rubab_Haider.pdf to rubab.haider@riphah.edu.pk
+2026-07-04 12:22:00,668 [INFO] [DRY RUN] Would send 35A3A485_Dr._Tayyaba_Anwar.pdf to tayyaba.anwar@riphah.edu.pk
+2026-07-04 12:22:00,711 [INFO] [DRY RUN] Would send 112B310B_Dr._Amna_Niaz.pdf to amna.niaz@riphah.edu.pk
+2026-07-04 12:22:00,757 [INFO] [DRY RUN] Would send A25729B3_Dr._Areej_Nadir.pdf to areej.nadir@riphah.edu.pk
+2026-07-04 12:22:00,802 [INFO] [DRY RUN] Would send 561A1B0E_Dr._Aneela_Tahir.pdf to aneela.tahir@riphah.edu.pk
+2026-07-04 12:22:00,848 [INFO] [DRY RUN] Would send C328B6EA_Dr._Maria_Hameed.pdf to maria.hameed@riphah.edu.pk
+2026-07-04 12:22:00,892 [INFO] [DRY RUN] Would send 9E0569EC_Dr._Sana_Ayyaz.pdf to sana.ayyaz@riphah.edu.pk
+2026-07-04 12:22:00,939 [INFO] [DRY RUN] Would send F0971ADA_Dr._Naziha_Inam.pdf to naziha.inam@riphah.edu.pk
+2026-07-04 12:22:00,984 [INFO] [DRY RUN] Would send A3F95EBB_Dr._Aleena_Muskan_Niazi.pdf to aleena.muskan@riphah.edu.pk
+2026-07-04 12:22:01,035 [INFO] [DRY RUN] Would send AD500CD0_Dr._Syed_Umer_Afzaal.pdf to umer.afzaal@riphah.edu.pk
+2026-07-04 12:22:01,078 [INFO] [DRY RUN] Would send 411D0923_Dr._Rabia_Mazhar.pdf to rabia.mazhar@riphah.edu.pk
+2026-07-04 12:22:01,125 [INFO] [DRY RUN] Would send EF0D71F1_Dr._Ahmed_Hussain.pdf to ahmed.bhutta@riphah.edu.pk
+2026-07-04 12:22:01,126 [INFO] Run complete: sent=24 skipped=0
+2026-07-04 12:29:52,365 [INFO] Starting email send run
+2026-07-04 12:29:58,505 [INFO] Sent certificate 40C0CD41_Prof._Dr._Shahiq-uz-Zaman.pdf to Prof. Dr. Shahiq-uz-Zaman <shahiq.zaman@riphah.edu.pk>
+2026-07-04 12:30:05,029 [INFO] Sent certificate 4A9C2998_Prof._Dr._Humaira_Nadeem.pdf to Prof. Dr. Humaira Nadeem <humaira.nadeem@riphah.edu.pk>
+2026-07-04 12:30:16,201 [INFO] Sent certificate 17CF942C_Dr._Babar_Murtaza.pdf to Dr. Babar Murtaza <babar.murtaza@riphah.edu.pk>
+2026-07-04 12:30:26,714 [INFO] Sent certificate 0D16D968_Dr._Muhammad_Mohsin_Ansari.pdf to Dr. Muhammad Mohsin Ansari <muhammad.mohsin@riphah.edu.pk>
+2026-07-04 12:30:33,382 [INFO] Sent certificate 1B92FE97_Dr._Muhammad_Faheem.pdf to Dr. Muhammad Faheem <muhammad.faheem@riphah.edu.pk>
+2026-07-04 12:30:43,920 [INFO] Sent certificate 9403593C_Dr._Shahana_Khattak.pdf to Dr. Shahana Khattak <shahna.khattak@riphah.edu.pk>
+2026-07-04 12:30:54,632 [INFO] Sent certificate C99F9DB0_Dr._Khan_Hashim.pdf to Dr. Khan Hashim <khan.hashim@riphah.edu.pk>
+2026-07-04 12:31:00,673 [INFO] Sent certificate 9A7DAF08_Dr._Amber_Mehmood_Minhas.pdf to Dr. Amber Mehmood Minhas <amber.minhas@riphah.edu.pk>
+2026-07-04 12:31:09,153 [INFO] Sent certificate B0B840A5_Dr._Sundas_Safdar_Khan.pdf to Dr. Sundas Safdar Khan <sundas.safdar@riphah.edu.pk>
+2026-07-04 12:31:16,128 [INFO] Sent certificate A63F2F6C_Dr._Kamil_Anum.pdf to Dr. Kamil Anum <kamil.anum@riphah.edu.pk>
+2026-07-04 12:31:22,088 [INFO] Sent certificate 993759F5_Dr._Azra_Begum.pdf to Dr. Azra Begum <azra.begum@riphah.edu.pk>
+2026-07-04 12:31:29,888 [INFO] Sent certificate 4C367774_Dr._Maha_Mir.pdf to Dr. Maha Mir <maha.mir@riphah.edu.pk>
+2026-07-04 12:31:35,547 [INFO] Sent certificate 6963181F_Dr._Rubab_Haider.pdf to Dr. Rubab Haider <rubab.haider@riphah.edu.pk>
+2026-07-04 12:31:40,948 [INFO] Sent certificate 35A3A485_Dr._Tayyaba_Anwar.pdf to Dr. Tayyaba Anwar <tayyaba.anwar@riphah.edu.pk>
+2026-07-04 12:31:49,300 [INFO] Sent certificate 112B310B_Dr._Amna_Niaz.pdf to Dr. Amna Niaz <amna.niaz@riphah.edu.pk>
+2026-07-04 12:31:54,861 [INFO] Sent certificate A25729B3_Dr._Areej_Nadir.pdf to Dr. Areej Nadir <areej.nadir@riphah.edu.pk>
+2026-07-04 12:32:04,832 [INFO] Sent certificate 561A1B0E_Dr._Aneela_Tahir.pdf to Dr. Aneela Tahir <aneela.tahir@riphah.edu.pk>
+2026-07-04 12:32:10,713 [INFO] Sent certificate C328B6EA_Dr._Maria_Hameed.pdf to Dr. Maria Hameed <maria.hameed@riphah.edu.pk>
+2026-07-04 12:32:16,822 [INFO] Sent certificate 9E0569EC_Dr._Sana_Ayyaz.pdf to Dr. Sana Ayyaz <sana.ayyaz@riphah.edu.pk>
+2026-07-04 12:32:22,992 [INFO] Sent certificate F0971ADA_Dr._Naziha_Inam.pdf to Dr. Naziha Inam <naziha.inam@riphah.edu.pk>
+2026-07-04 12:32:28,078 [INFO] Sent certificate A3F95EBB_Dr._Aleena_Muskan_Niazi.pdf to Dr. Aleena Muskan Niazi <aleena.muskan@riphah.edu.pk>
+2026-07-04 12:32:34,163 [INFO] Sent certificate AD500CD0_Dr._Syed_Umer_Afzaal.pdf to Dr. Syed Umer Afzaal <umer.afzaal@riphah.edu.pk>
+2026-07-04 12:32:39,432 [INFO] Sent certificate 411D0923_Dr._Rabia_Mazhar.pdf to Dr. Rabia Mazhar <rabia.mazhar@riphah.edu.pk>
+2026-07-04 12:32:47,311 [INFO] Sent certificate EF0D71F1_Dr._Ahmed_Hussain.pdf to Dr. Ahmed Hussain <ahmed.bhutta@riphah.edu.pk>
+2026-07-04 12:32:47,312 [INFO] Run complete: sent=24 skipped=0
+2026-07-04 13:17:28,967 [INFO] Starting email send run
+2026-07-04 13:17:38,907 [INFO] Sent certificate C9E0E3CA_Assoc.Prof.Dr_Hina_Ahsan.pdf to Assoc.Prof.Dr Hina Ahsan <hina.ahsan@riphah.edu.pk>
+2026-07-04 13:17:48,640 [INFO] Sent certificate E966812A_Dr_Muhammad_Wasay.pdf to Dr Muhammad Wasay <wasay.shahid@riphah.edu.pk>
+2026-07-04 13:17:58,768 [INFO] Sent certificate 88B00227_Prof._Dr._Rehan_Zafar_Paracha.pdf to Prof. Dr. Rehan Zafar Paracha <rehan.paracha@riphah.edu.pk>
+2026-07-04 13:17:58,772 [WARNING] Certificate not found for Assist. Prof. Dr. Hafiza Madiha Kanwal at /home/hp/certificates/Certificates_2/certificates_output
+2026-07-04 13:17:58,774 [INFO] Wrote failure report to /home/hp/certificates/Certificates_2/failed_matches.csv
+2026-07-04 13:17:58,774 [INFO] Run complete: sent=3 skipped=1

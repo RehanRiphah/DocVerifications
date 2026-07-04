@@ -1,10 +1,12 @@
 # Certificate generator configuration
 
 [paths]
-csv_path = "RIPS_FPS.csv"
-template_path = "Attendance.pdf"
+csv_path = "RIPS_FPS_Facilitate.csv"
+template_path = "Facilitation.pdf"
 output_dir = "certificates_output"
+failure_report = "failed_matches.csv"
 name_column = "Names of faculty member/s"
+email_column = "Email Address of facuty member/s"
 
 [layout]
 name_center_x = 750
@@ -54,3 +56,12 @@ office_contact = "+923316665581"
 
 [supabase]
 table_name = "certificates"
+
+[email]
+smtp_host = "smtp.gmail.com"
+smtp_port = 465
+sender_email = "rehanzfr@gmail.com"
+# app_password should be stored securely; prefer EMAIL_APP_PASSWORD via environment variable.
+# app_password = "your_16_char_app_password"
+subject_template = "Thank you for Facilitation the training on {program_name}"
+body_template = "Dear {name},\n\nThank you for Facilitation the training on {program_name}. Attached is your certificate of Facilitation.\n\nBest regards,\n{issuer}\nNote:If you found some problems in this email do let me reply with the problem\nThe automatic verification system of this certificate is implemented. Just use Qr code with your mobile to verify\n"
