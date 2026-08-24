@@ -1,0 +1,77 @@
+# Certificate generator configuration
+
+[paths]
+csv_path = "AI_In_PharmaHealth/Participants.csv"
+template_path = "AI_In_PharmaHealth/Certificate.pdf"
+output_dir = "AI_In_PharmaHealth/Certificates"
+failure_report = "AI_In_PharmaHealth/Certificates/failed_matches.csv"
+name_column = "Names"
+email_column = "Emails"
+
+[layout]
+certificate_mode = "name_only"
+name_only = true
+name_center_x = 764
+name_center_y = 645
+program_center_x = 750
+program_center_y = 435
+date_center_x = 500
+date_center_y = 360
+id_center_x = 110
+id_center_y = 20
+time_center_x = 500
+time_center_y = 310
+venue_center_x = 500
+venue_center_y = 250
+chair_center_x = 850
+chair_center_y = 360
+facilitators_center_x = 900
+facilitators_center_y = 310
+facilitators_box_width = 350
+facilitators_line_height = 18
+max_width = 420
+initial_font_size = 40
+min_font_size = 12
+qr_x = 1290
+qr_y = 464
+qr_size = 150
+qr_label = "Scan for verification"
+qr_label_x = 1367
+qr_label_y = 445
+
+[workshop]
+program_name = "AI in Pharma & Health: Foundations and Applications "
+issuer = "RIPHAH INSTITUTE OF PHARMACEUTICAL SCIENCES"
+version = "1.0"
+base_url = "https://certverify.streamlit.app/"
+qr_mode = "cert_id"
+time = "1200pm to 1500pm"
+venue = "Online"
+chair = "Prof. Dr. Arif Ullah"
+date = "13th June to 27th June 2026"
+facilitators = [
+    "Prof. Dr Rehan Zafar Paracha",
+    "Assoc. Prof. Dr Hina Ahsan",
+    "Assist. Prof. Dr Maryum Nisar",
+    "Assist. Prof. Dr Umer Asgher",
+    "Dr. Usman Qayyum"
+]
+
+[focal_facilitator]
+name = "Prof. Dr Rehan Zafar Paracha"
+email = "rehan.Paracha@riphah.edu.pk"
+contact_number = "+923316665581"
+office_contact = "+923316665581"
+
+[supabase]
+table_name = "certificates"
+workshop_table_name = "workshops"
+
+[email]
+smtp_host = "smtp.gmail.com"
+smtp_port = 465
+sender_email = "rehanzfr@gmail.com"
+# app_password should be stored securely; prefer EMAIL_APP_PASSWORD via environment variable.
+# app_password = "your_16_char_app_password"
+subject_template = "Thank you for Facilitation the training on {program_name}"
+body_template = "Dear {name},\n\nThank you for Facilitation the training on {program_name}. Attached is your certificate of Facilitation.\n\nBest regards,\n{issuer}\nNote:If you found some problems in this email do let me reply with the problem\nThe automatic verification system of this certificate is implemented. Just use Qr code with your mobile to verify\n"

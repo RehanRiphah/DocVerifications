@@ -116,6 +116,31 @@ def save_to_supabase(cert_data, table_name: str):
         print(f"❌ Supabase insert failed: {e}")
         return False
 
+
+def save_workshop_to_supabase(workshop_data, table_name: str):
+    row = {
+        "program_name": workshop_data.get("program_name"),
+        "issuer": workshop_data.get("issuer"),
+        "version": workshop_data.get("version"),
+        "date": workshop_data.get("date"),
+        "time": workshop_data.get("time"),
+        "venue": workshop_data.get("venue"),
+        "chair": workshop_data.get("chair"),
+        "facilitators": workshop_data.get("facilitators"),
+        "base_url": workshop_data.get("base_url"),
+        "qr_mode": workshop_data.get("qr_mode"),
+        "submitted_at": datetime.utcnow().isoformat(),
+    }
+
+    try:
+        supabase.table(table_name).insert(row).execute()
+        print(f"✅ Saved workshop metadata to Supabase: {workshop_data.get('program_name')}")
+        return True
+    except Exception as e:
+        print(f"❌ Workshop Supabase insert failed: {e}")
+        return False
+
+
 def generate_certificates(config: dict):
     paths = config.get("paths", {})
     layout = config.get("layout", {})
@@ -152,11 +177,20 @@ def generate_certificates(config: dict):
     max_width = layout.get("max_width", 400)
     initial_font_size = layout.get("initial_font_size", 40)
     min_font_size = layout.get("min_font_size", 12)
+    certificate_mode = str(layout.get("certificate_mode", layout.get("mode", "full"))).lower()
+    name_only_mode = bool(layout.get("name_only", False)) or certificate_mode == "name_only"
+    qr_x = layout.get("qr_x", 50)
+    qr_y = layout.get("qr_y", 50)
+    qr_size = layout.get("qr_size", 220)
+    qr_label = layout.get("qr_label", "Scan for ID lookup")
+    qr_label_x = layout.get("qr_label_x")
+    qr_label_y = layout.get("qr_label_y")
 
     program_name = workshop.get("program_name")
     issuer = workshop.get("issuer")
     version = workshop.get("version", "1.0")
     base_url = workshop.get("base_url", "https://docverifications.streamlit.app")
+    qr_mode = workshop.get("qr_mode", "cert_id")
     workshop_date = workshop.get("date")
     time_text = workshop.get("time")
     venue_text = workshop.get("venue")
@@ -164,6 +198,7 @@ def generate_certificates(config: dict):
     facilitators = workshop.get("facilitators", [])
     facilitators_text = ", ".join(facilitators) if facilitators else None
     table_name = supabase_config.get("table_name", DEFAULT_TABLE_NAME)
+    workshop_table_name = supabase_config.get("workshop_table_name", "workshops")
 
     if not program_name or not issuer:
         raise ValueError("Missing workshop configuration: program_name and issuer are required.")
@@ -174,6 +209,20 @@ def generate_certificates(config: dict):
     private_key, _ = load_or_generate_keys(private_key_path, public_key_path)
     df = pd.read_csv(csv_path)
     os.makedirs(output_dir, exist_ok=True)
+
+    workshop_payload = {
+        "program_name": program_name,
+        "issuer": issuer,
+        "version": version,
+        "date": workshop_date,
+        "time": time_text,
+        "venue": venue_text,
+        "chair": chair_text,
+        "facilitators": facilitators,
+        "base_url": base_url,
+        "qr_mode": qr_mode,
+    }
+    save_workshop_to_supabase(workshop_payload, workshop_table_name)
 
     font_dir = Path(__file__).resolve().parent / "fonts"
     cinzel_path = font_dir / "Cinzel-Medium.ttf"
@@ -219,7 +268,7 @@ def generate_certificates(config: dict):
             print(f"⚠️ Skipping PDF generation for {name} due to DB error")
             continue
 
-        cert_id_url = generate_qr_url(cert_data, signature, base_url=base_url, qr_mode="cert_id")
+        cert_id_url = generate_qr_url(cert_data, signature, base_url=base_url, qr_mode=qr_mode)
         
         # PDF Generation
         packet = BytesIO()
@@ -273,28 +322,36 @@ def generate_certificates(config: dict):
         while stringWidth(name, 'Helvetica', font_size) > max_width and font_size > min_font_size:
             font_size -= 1
         draw_text(name_center_x, name_center_y, name, font_size)
-        
-        # Other fields
-        draw_text(program_center_x, program_center_y, f'"{program_name}"', 45, font='Cinzel')
-        if time_text and time_center_x is not None and time_center_y is not None:
-            draw_text(time_center_x, time_center_y, time_text, 20, align='left')
-        if venue_text and venue_center_x is not None and venue_center_y is not None:
-            draw_text(venue_center_x, venue_center_y, venue_text, 20, align='left')
-        if chair_text and chair_center_x is not None and chair_center_y is not None:
-            draw_text(chair_center_x, chair_center_y, chair_text, 20, align='left')
-        if facilitators_text and facilitators_center_x is not None and facilitators_center_y is not None:
-            lines = wrap_text(facilitators_text, facilitators_box_width, font_name='Helvetica', font_size=16)
-            for index, line in enumerate(lines):
-                draw_text(facilitators_center_x, facilitators_center_y - index * facilitators_line_height, line, 16, align='left')
-        draw_text(date_center_x, date_center_y, f"{issue_date}", 20, align='left')
-        c.setFillColorRGB(1, 1, 1)
-        draw_text(id_center_x, id_center_y, f"ID: {cert_id}", 20)
-        c.setFillColorRGB(0, 0, 0)
+
+        if not name_only_mode:
+            # Other fields
+            draw_text(program_center_x, program_center_y, f'"{program_name}"', 45, font='Cinzel')
+            if time_text and time_center_x is not None and time_center_y is not None:
+                draw_text(time_center_x, time_center_y, time_text, 20, align='left')
+            if venue_text and venue_center_x is not None and venue_center_y is not None:
+                draw_text(venue_center_x, venue_center_y, venue_text, 20, align='left')
+            if chair_text and chair_center_x is not None and chair_center_y is not None:
+                draw_text(chair_center_x, chair_center_y, chair_text, 20, align='left')
+            if facilitators_text and facilitators_center_x is not None and facilitators_center_y is not None:
+                lines = wrap_text(facilitators_text, facilitators_box_width, font_name='Helvetica', font_size=16)
+                for index, line in enumerate(lines):
+                    draw_text(facilitators_center_x, facilitators_center_y - index * facilitators_line_height, line, 16, align='left')
+            draw_text(date_center_x, date_center_y, f"{issue_date}", 20, align='left')
+            c.setFillColorRGB(1, 1, 1)
+            draw_text(id_center_x, id_center_y, f"ID: {cert_id}", 20)
+            c.setFillColorRGB(0, 0, 0)
+        else:
+            # Name-only certificate mode with QR code
+            draw_qr(c, cert_id_url, qr_x, qr_y, qr_size)
+            label_x = qr_label_x if qr_label_x is not None else (qr_x + (qr_size / 2))
+            label_y = qr_label_y if qr_label_y is not None else (qr_y - 20)
+            draw_text(label_x, label_y, f"Cert ID# {cert_id}", 12, align='center')
         
         # QR Code: short cert_id only
-        print(f"🔗 Short QR URL: {cert_id_url}")
-        draw_qr(c, cert_id_url, 50, 50, 220)
-        draw_text(160, 40, "Scan for ID lookup", 10, align='center')
+        if not name_only_mode:
+            print(f"🔗 Short QR URL: {cert_id_url}")
+            draw_qr(c, cert_id_url, 50, 50, 220)
+            draw_text(160, 40, "Scan for ID lookup", 10, align='center')
         
         c.save()
         packet.seek(0)
